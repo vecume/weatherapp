@@ -10,7 +10,7 @@ function ChosenWeather({ weather }) {
       <div className="additional-info-right">
         <div className="info-item">
           <div className="img-wrapper">
-            <img width="30" height="30" src="img/wind.svg" />
+            <img alt="wind" width="30" height="30" src="img/wind.svg" />
             <span>Wind</span>
           </div>
           <div className="info">
@@ -19,7 +19,7 @@ function ChosenWeather({ weather }) {
         </div>
         <div className="info-item">
           <div className="img-wrapper">
-            <img width="30" height="30" src="img/humidity.svg" />
+            <img alt="humidity" width="30" height="30" src="img/humidity.svg" />
             <span>Humidity</span>
           </div>
           <div className="info">
@@ -31,7 +31,7 @@ function ChosenWeather({ weather }) {
       <div className="additional-info-left">
         <div className="info-item">
           <div className="img-wrapper">
-            <img width="30" height="30" src="img/pressure.svg" />
+            <img alt="pressure" width="30" height="30" src="img/pressure.svg" />
             <span>Pressure</span>
           </div>
           <div className="info">
@@ -40,7 +40,7 @@ function ChosenWeather({ weather }) {
         </div>
         <div className="info-item">
           <div className="img-wrapper">
-            <img width="30" height="30" src="img/sun.svg" />
+            <img alt="UV index" width="30" height="30" src="img/sun.svg" />
             <span>UV Index</span>
           </div>
           <div className="info">
