@@ -1,0 +1,285 @@
+.home {
+  display: block;
+  margin-top: 100px;
+  border-radius: 40px;
+  transition: 0.3s ease;
+  padding: 5px;
+}
+
+.box h2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 15em;
+  left: 50%;
+  transition: color 1s ease;
+  margin: 0;
+}
+
+.box h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.box h2:nth-child(2) {
+  color: #fff;
+  animation: water_flow 4s ease-in-out infinite;
+}
+
+.changeAnimationName {
+  color: #fff !important;
+}
+
+.home:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px gray;
+}
+
+.home:hover .box h2 {
+  -webkit-text-stroke: 2px #fff;
+}
+.box {
+  position: relative;
+  margin-top: 30vh;
+}
+
+.active {
+  color: #fff;
+}
+
+@keyframes water_flow {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 40%,
+      15% 44%,
+      32% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 60%,
+      16% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0 100%
+    );
+  }
+}
+
+.textbox {
+  margin-top: 100px;
+}
+
+.wrapper {
+  width: 60%;
+  overflow: hidden;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.textbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textbox h3.glitch {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 800;
+  position: relative;
+  font-size: 30px;
+  padding: 30px;
+}
+.textbox h3.glitch::before,
+.textbox h3.glitch::after {
+  padding: 30px;
+  content: "CITY";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background: black;*/
+  overflow: hidden;
+  top: 0;
+}
+
+.textbox2 h3.glitch::before,
+.textbox2 h3.glitch::after {
+  content: "NOT";
+}
+
+.textbox3 h3.glitch::before,
+.textbox3 h3.glitch::after {
+  content: "FOUND!";
+}
+
+.textbox h3.glitch::before {
+  left: 3px;
+  text-shadow: -2px 0 red;
+  animation-name: glitch-animation-1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+.textbox h3.glitch::after {
+  left: -3px;
+  text-shadow: -2px 0 blue;
+  animation-name: glitch-animation-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+
+@keyframes glitch-animation-1 {
+  0% {
+    clip: rect(91px, 350px, 54px, 30px);
+  }
+  5% {
+    clip: rect(137px, 350px, 119px, 30px);
+  }
+  10% {
+    clip: rect(57px, 350px, 50px, 30px);
+  }
+  15% {
+    clip: rect(69px, 350px, 69px, 30px);
+  }
+  20% {
+    clip: rect(42px, 350px, 9px, 30px);
+  }
+  25% {
+    clip: rect(103px, 350px, 22px, 30px);
+  }
+  30% {
+    clip: rect(48px, 350px, 47px, 30px);
+  }
+  35% {
+    clip: rect(90px, 350px, 93px, 30px);
+  }
+  40% {
+    clip: rect(48px, 350px, 75px, 30px);
+  }
+  45% {
+    clip: rect(24px, 350px, 97px, 30px);
+  }
+  50% {
+    clip: rect(29px, 350px, 93px, 30px);
+  }
+  55% {
+    clip: rect(48px, 350px, 67px, 30px);
+  }
+  60% {
+    clip: rect(70px, 350px, 10px, 30px);
+  }
+  65% {
+    clip: rect(144px, 350px, 31px, 30px);
+  }
+  70% {
+    clip: rect(19px, 350px, 2px, 30px);
+  }
+  75% {
+    clip: rect(125px, 350px, 110px, 30px);
+  }
+  80% {
+    clip: rect(24px, 350px, 100px, 30px);
+  }
+  85% {
+    clip: rect(114px, 350px, 116px, 30px);
+  }
+  90% {
+    clip: rect(77px, 350px, 104px, 30px);
+  }
+  95% {
+    clip: rect(2px, 350px, 56px, 30px);
+  }
+  100% {
+    clip: rect(33px, 350px, 148px, 30px);
+  }
+}
+@keyframes glitch-animation-2 {
+  0% {
+    clip: rect(148px, 350px, 112px, 30px);
+  }
+  5% {
+    clip: rect(136px, 350px, 36px, 30px);
+  }
+  10% {
+    clip: rect(78px, 350px, 124px, 30px);
+  }
+  15% {
+    clip: rect(148px, 350px, 84px, 30px);
+  }
+  20% {
+    clip: rect(60px, 350px, 98px, 30px);
+  }
+  25% {
+    clip: rect(65px, 350px, 128px, 30px);
+  }
+  30% {
+    clip: rect(110px, 350px, 103px, 30px);
+  }
+  35% {
+    clip: rect(17px, 350px, 5px, 30px);
+  }
+  40% {
+    clip: rect(146px, 350px, 27px, 30px);
+  }
+  45% {
+    clip: rect(18px, 350px, 28px, 30px);
+  }
+  50% {
+    clip: rect(40px, 350px, 118px, 30px);
+  }
+  55% {
+    clip: rect(135px, 350px, 45px, 30px);
+  }
+  60% {
+    clip: rect(118px, 350px, 45px, 30px);
+  }
+  65% {
+    clip: rect(3px, 350px, 76px, 30px);
+  }
+  70% {
+    clip: rect(96px, 350px, 119px, 30px);
+  }
+  75% {
+    clip: rect(73px, 350px, 50px, 30px);
+  }
+  80% {
+    clip: rect(104px, 350px, 130px, 30px);
+  }
+  85% {
+    clip: rect(70px, 350px, 52px, 30px);
+  }
+  90% {
+    clip: rect(84px, 350px, 70px, 30px);
+  }
+  95% {
+    clip: rect(134px, 350px, 31px, 30px);
+  }
+  100% {
+    clip: rect(27px, 350px, 143px, 30px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box h2 {
+    font-size: 10em;
+  }
+}
