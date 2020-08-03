@@ -20,7 +20,7 @@ function WeatherItem({ weather, isCurrent }) {
       <span className="data-text">{date}</span>
       <h2>{data.temp_c || data.avgtemp_c}&deg;C</h2>
       <p>FEELS LIKE <span>{data.feelslike_c || data.maxtemp_c}&deg;C</span></p>
-      <img src={data.condition.icon} />
+      <img alt={data.condition.text} src={data.condition.icon} />
       <span className="weather-condition">{data.condition.text}</span>
     </div>
   )
